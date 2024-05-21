@@ -51,7 +51,7 @@
           "fields": [
             {
               "label": "Creator Name",
-              "property": "entries[0].content.dc.creators.creatorName",
+              "property": "entries[0].content.dc.creators[0].creatorName",
               "type": "rgba"
             },
             {
@@ -130,7 +130,7 @@
           "facets": [
             {
               "name": "Creator",
-              "field_name": "dc.creators.creatorName",
+              "field_name": "dc.creators[0].creatorName",
               "type": "terms",
               "size": 10
             },
