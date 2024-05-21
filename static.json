@@ -31,7 +31,7 @@
         }
       },
       "content": {
-        "headline": "RPL@APS"
+        "headline": "XPCS@APS"
       },
       "components": {
         "Footer": {
@@ -50,8 +50,8 @@
         "ResultListing": {
           "fields": [
             {
-              "label": "Target Color",
-              "property": "entries[0].content.project_metadata.target_color",
+              "label": "Creator Name",
+              "property": "entries[0].content.dc.creators[0].creatorName",
               "type": "rgba"
             },
             {
