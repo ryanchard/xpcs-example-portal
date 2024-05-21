@@ -133,6 +133,30 @@
               "field_name": "dc.creators.creatorName",
               "type": "terms",
               "size": 10
+            },
+            {
+                "name": "Parent Folder",
+                "field_name": "project_metadata.parent",
+                "type": "terms",
+                "size": 10
+            },
+            {
+                "name": "APS Cycle",
+                "field_name": "project_metadata.cycle",
+                "type": "terms",
+                "size": 10
+            },
+            {
+                "name": "Qmap",
+                "field_name": "project_metadata.reprocessing.qmap.name",
+                "type": "terms",
+                "size": 10
+            },
+            {
+                "name": "Reprocessed Datasets",
+                "field_name": "project_metadata.reprocessing.suffix",
+                "type": "terms",
+                "size": 10
             }
           ]
         }
