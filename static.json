@@ -51,16 +51,16 @@
           "fields": [
             {
               "label": "Creator Name",
-              "property": "entries[0].content.dc.creators[0].creatorName",
+              "property": "entries[0].content.dc.creators.creatorName",
               "type": "rgba"
             },
             {
-              "label": "Time to Best",
-              "property": "entries[0].content.project_metadata.time_to_best"
+              "label": "Parent",
+              "property": "entries[0].content.project_metadata.parent"
             },
             {
-              "label": "Best Color",
-              "property": "entries[0].content.project_metadata.best_so_far",
+              "label": "Cycle",
+              "property": "entries[0].content.project_metadata.cycle",
               "type": "rgba"
             },
             {
