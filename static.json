@@ -130,7 +130,7 @@
           "facets": [
             {
               "name": "Creator",
-              "field_name": "dc.creators[0].creatorName",
+              "field_name": "dc.creators.creatorName",
               "type": "terms",
               "size": 10
             },
