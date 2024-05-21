@@ -8,8 +8,8 @@
     "version": "1.0.0",
     "attributes": {
       "metadata": {
-        "title": "Search | RPL@APS",
-        "description": "This is the RPL project. Raf should fill in some details here!"
+        "title": "Search | XPCS@APS",
+        "description": "This is the XPCS project!"
       },
       "features": {
         "jsonata": true
@@ -126,7 +126,7 @@
           "client_id": "7b29cd62-7df9-4d21-9d9c-29b2768355a4"
         },
         "search": {
-          "index": "aefcecc6-e554-4f8c-a25b-147f23091944",
+          "index": "6871e83e-866b-41bc-8430-e3cf83b43bdc",
           "facets": [
             {
               "name": "Creator",
