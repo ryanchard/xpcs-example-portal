@@ -60,7 +60,7 @@
             },
             {
               "label": "Cycle",
-              "property": "entries[0].content.project_metadata.cycle",
+              "property": "entries[0].content.project_metadata.project_metadata.cycle",
               "type": "rgba"
             },
             {
