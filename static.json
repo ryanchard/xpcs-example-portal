@@ -84,13 +84,13 @@
               "label": "Solver",
               "property": "entries[0].content.project_metadata.solver"
             },
-            // {
-            //   "label": "Instrument",
-            //   "property": "$(entries[0].content.project_metadata | to_entries | map(select(.key | match('measurement.instrument'))))"
-            // },
+            {
+              "label": "Instrument",
+              "property": "$(entries[0].content.project_metadata | with_entries(select(.key | startswith(\"measurement.instrument\"))))"
+            },
             {
               "label": "XPCS",
-              "property": "$(entries[0].content.project_metadata | with_entries(select(.key | startswith('xpcs') ) ) )"
+              "property": "$(entries[0].content.project_metadata | with_entries(select(.key | startswith(\"xpcs\"))))"
             }
           ]
         }
