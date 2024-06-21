@@ -50,10 +50,6 @@
         "ResultListing": {
           "fields": [
             {
-              "label": "Parent",
-              "property": "entries[0].content.project_metadata.parent"
-            },
-            {
               "label": "Cycle",
               "property": "entries[0].content.project_metadata.aps_cycle_v2"
             },
