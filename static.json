@@ -50,9 +50,12 @@
         "ResultListing": {
           "fields": [
             {
+              "label": "Parent",
+              "property": "entries[0].content.project_metadata.parent"
+            },
+            {
               "label": "Cycle",
-              "property": "entries[0].content.project_metadata.aps_cycle_v2",
-              "type": "rgba"
+              "property": "entries[0].content.project_metadata.aps_cycle_v2"
             },
             {
               "label": "Date",
@@ -62,6 +65,7 @@
         },
         "Result": {
           "heading": "entries[0].content.dc.titles[0].title",
+          // "summary": "entries[0].content.dc.descriptions[0].description",
           "fields": [
             {
               "label": "Target Color",
