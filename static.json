@@ -50,28 +50,18 @@
         "ResultListing": {
           "fields": [
             {
-              "label": "Creator Name",
-              "property": "entries[0].content.dc.creators[0].creatorName",
-              "type": "rgba"
-            },
-            {
-              "label": "Parent",
-              "property": "entries[0].content.project_metadata.parent"
-            },
-            {
               "label": "Cycle",
-              "property": "entries[0].content.project_metadata.project_metadata.cycle",
+              "property": "entries[0].content.project_metadata.aps_cycle_v2",
               "type": "rgba"
             },
             {
-              "label": "Total Time",
-              "property": "entries[0].content.project_metadata.total_time"
+              "label": "Date",
+              "property": "entries[0].content.project_metadata.measurement.instrument.source_end.datetime"
             }
           ]
         },
         "Result": {
           "heading": "entries[0].content.dc.titles[0].title",
-          "summary": "entries[0].content.dc.descriptions[0].description",
           "fields": [
             {
               "label": "Target Color",
