@@ -50,12 +50,16 @@
         "ResultListing": {
           "fields": [
             {
+              "label": "Test",
+              "property": "entries[0].content.project_metadata.executable['name']"
+            },
+            {
               "label": "Cycle",
-              "property": "entries[0].content.project_metadata['aps_cycle_v2']"
+              "property": "entries[0].content.project_metadata.aps_cycle_v2"
             },
             {
               "label": "Date",
-              "property": "entries[0].content.project_metadata['measurement.instrument.source_end.datetime']"
+              "property": "entries[0].content.project_metadata.measurement.instrument.source_end.datetime"
             }
           ]
         },
