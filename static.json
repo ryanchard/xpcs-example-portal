@@ -65,7 +65,6 @@
         },
         "Result": {
           "heading": "entries[0].content.dc.titles[0].title",
-          // "summary": "entries[0].content.dc.descriptions[0].description",
           "fields": [
             {
               "label": "Target Color",
