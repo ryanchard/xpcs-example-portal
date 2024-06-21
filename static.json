@@ -70,8 +70,8 @@
           ]
         },
         "Result": {
-          
-          "summary": "entries[0].content.subtitle",
+          "heading": "entries[0].content.titles[0].title",
+          "summary": "entries[0].content.descriptions[0].description",
           "fields": [
             {
               "label": "Target Color",
