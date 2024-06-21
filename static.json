@@ -90,7 +90,7 @@
             },
             {
               "label": "XPCS",
-              "property": "$(entries[0].content.project_metadata | to_entries | map(select(.key | match('measurement'))))"
+              "property": "$(entries[0].content.project_metadata | to_entries | map(select(.key | match('measurement')) | '\(.key): \(.value)' ))"
             }
           ]
         }
