@@ -72,7 +72,6 @@
               "property": "entries[0].content.files[filename='total_intensity_vs_time.png'].url",
               "type": "image"
             },
-            
             {
               "label": "Parent",
               "property": "entries[0].content.project_metadata.parent"
@@ -82,21 +81,16 @@
               "property": "entries[0].content.project_metadata.cycle"
             },
             {
-              "label": "Plate 2",
-              "property": "$replace(entries[0].content.files[filename='plate_2.jpg'].url, 'https://bb8d048a-2cad-4029-a9c7-671ec5d1f84d.e.globus.org', 'https://g-cd34a.fd635.8443.data.globus.org')",
-              "type": "image"
-            },
-            {
               "label": "Solver",
               "property": "entries[0].content.project_metadata.solver"
             },
             {
-              "label": "Workflow Steps",
-              "property": "entries[0].content.project_metadata.wf_steps"
+              "label": "Instrument",
+              "property": ".entries[0].content.project_metadata | to_entries | map(select(.key | match(\"measurement.instrument\")))"
             },
             {
-              "label": "Runs",
-              "property": "entries[0].content.project_metadata.runs"
+              "label": "XPCS",
+              "property": ".entries[0].content.project_metadata | to_entries | map(select(.key | match(\"measurement\")))"
             }
           ]
         }
