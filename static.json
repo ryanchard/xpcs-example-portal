@@ -55,7 +55,7 @@
             },
             {
               "label": "Date",
-              "property": "entries[0].content.project_metadata['measurement.instrument.source_end.datetime']"
+              "property": "entries[0].content.project_metadata.measurement.instrument.source_end.datetime"
             }
           ]
         },
@@ -63,32 +63,23 @@
           "heading": "entries[0].content.dc.titles[0].title",
           "fields": [
             {
-              "label": "Target Color",
-              "property": "entries[0].content.project_metadata.target_color",
-              "type": "rgba"
-            },
-            {
-              "label": "Best Color",
-              "property": "entries[0].content.project_metadata.best_so_far",
-              "type": "rgba"
-            },
-            {
-              "label": "Time to Best",
-              "property": "entries[0].content.project_metadata.time_to_best"
-            },
-            {
-              "label": "Total Time",
-              "property": "entries[0].content.project_metadata.total_time"
-            },
-            {
-              "label": "Convergence Graph",
-              "property": "$replace(entries[0].content.files[filename='convergence_graph.png'].url, 'https://bb8d048a-2cad-4029-a9c7-671ec5d1f84d.e.globus.org', 'https://g-cd34a.fd635.8443.data.globus.org')",
+              "label": "Scattering Pattern",
+              "property": "entries[0].content.files[filename='scattering_pattern_log.png'].url",
               "type": "image"
             },
             {
-              "label": "Plate 1",
-              "property": "$replace(entries[0].content.files[filename='plate_1.jpg'].url, 'https://bb8d048a-2cad-4029-a9c7-671ec5d1f84d.e.globus.org', 'https://g-cd34a.fd635.8443.data.globus.org')",
+              "label": "Intensity",
+              "property": "entries[0].content.files[filename='total_intensity_vs_time.png'].url",
               "type": "image"
+            },
+            
+            {
+              "label": "Parent",
+              "property": "entries[0].content.project_metadata.parent"
+            },
+            {
+              "label": "Cycle",
+              "property": "entries[0].content.project_metadata.cycle"
             },
             {
               "label": "Plate 2",
