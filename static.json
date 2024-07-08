@@ -65,12 +65,18 @@
             {
               "label": "Scattering Pattern",
               "property": "entries[0].content.files[filename='scattering_pattern_log.png'].url",
-              "type": "image"
+              "type": "globus.embed",
+              "options": {
+                "type": "image"
+              }
             },
             {
               "label": "Intensity",
               "property": "entries[0].content.files[filename='total_intensity_vs_time.png'].url",
-              "type": "image"
+              "type": "globus.embed",
+              "options": {
+                "type": "image"
+              }
             },
             {
               "label": "Parent",
